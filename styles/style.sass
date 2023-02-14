@@ -1,0 +1,364 @@
+//Variables
+$blackText: #3d3d3d
+$whiteText: #e8e8e8
+$transition: all 0.3s
+$colorPurple: #5846f9
+
+*
+    margin: 0
+    padding: 0
+    list-style: none
+    text-decoration: none
+
+.bodyContainer
+    position: relative
+    width: 100%
+    height: auto
+    header
+        #desktopNav
+            position: fixed
+            z-index: 2
+            width: 100vw
+            height: 6vw
+            background: rgb(15,5,71)
+            background: linear-gradient(45deg, rgba(15,5,71,1) 0%, rgba(131,2,170,1) 100%)
+            button
+                position: relative
+                float: left
+                width: 10vw
+                margin-left: 5vw
+                height: 2vw
+                margin-top: 2vw
+                background: none
+                border: 2px solid $whiteText
+                border-radius: 5px
+                cursor: pointer
+                color: $whiteText
+                font-size: 0.8vw
+                transition: $transition
+            button:hover
+                background: $whiteText
+                color: $blackText
+            #DesktopMenu
+                position: relative
+                width: 40vw
+                float: left
+                height: 4vw
+                margin-top: 1vw
+                margin-left: 30vw
+                ul
+                    position: relative
+                    width: 100%
+                    height: 100%
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    align-content: center
+                    li
+                        position: relative
+                        float: left
+                        width: 16%
+                        padding: 0 2%
+                        cursor: pointer
+                        text-align: center
+                        color: white
+                        font-size: 1vw
+
+            .LogoCountainer
+                position: relative
+                width: 4vw
+                height: 4vw
+                margin-top: 1vw
+                margin-left: 6vw
+                float: left
+    #Section1
+        width: 100%
+        min-height: 100vh
+        background: silver
+    #Section2
+        width: 100%
+        min-height: 100vh
+        .TextBlock
+            position: relative
+            width: 30%
+            height: auto
+            margin-left: 10%
+            top: 15vw
+            h2
+                font-size: 3vw
+                color: $blackText
+            .line
+                position: relative
+                top: 0.5vw
+                width: 30%
+                height: 0.3vw
+                background: $colorPurple
+            p
+                position: relative
+                font-size: 1.2vw
+                top: 3vw
+                text-align: center
+                color: $blackText
+
+    #Section3
+        width: 100%
+        min-height: 100vh
+        padding-top: 5vw
+        padding-bottom: 5vw
+        .TextBlock
+            position: relative
+            width: 70%
+            margin-left: 15%
+            h2
+                font-size: 3vw
+                text-align: center
+                color: $blackText
+            .line
+                position: relative
+                width: 4vw
+                margin: 0 auto
+                height: 0.3vw
+                margin-top: 0.5vw
+                background: $colorPurple
+            p
+                position: relative
+                font-size: 1.2vw
+                margin-top: 1vw
+                color: $blackText
+                text-align: center
+        .itemsCountainer
+            position: relative
+            width: 80%
+            margin-left: 10%
+            margin-top: 2vw
+            display: table
+            .item:hover
+                box-shadow: 8px 8px 50px #969696
+                transform: scale(1.03)
+            .item
+                position: relative
+                width: 31%
+                float: left
+                height: 23vw
+                margin: 1vw 0%
+                outline: 1px solid $blackText
+                box-shadow: 5px 5px 13px #969696
+                transition: $transition
+                .ImageCountainer
+                    position: relative
+                    width: 100%
+                    height: 75%
+                .TextCountainer
+                    position: relative
+                    width: 100%
+                    height: 25%
+                    outline: 1px solid $blackText
+                    h3
+                        position: relative
+                        top: 0.5vw
+                        margin-left: 0.5vw
+                        font-size: 1.2vw
+                        color: $blackText
+                    p
+                        position: relative
+                        top: 1vw
+                        margin-left: 0.5vw
+                        font-size: 0.9vw
+                        color: $blackText
+
+            .item:nth-child(3n-1)
+                margin: 1vw 3%
+
+    #Section4
+        width: 100%
+        min-height: 100vh
+        padding-top: 5vw
+        padding-bottom: 5vw
+        .LeftCountainer
+            position: relative
+            width: 30%
+            margin-top: 6vw
+            margin-left: 10%
+            height: 10vw
+            p
+                position: relative
+                font-size: 1vw
+                text-align: center
+        .TextBlock
+            position: relative
+            width: 70%
+            margin-left: 15%
+            h2
+                font-size: 3vw
+                text-align: center
+                color: $blackText
+            .line
+                position: relative
+                width: 4vw
+                margin: 0 auto
+                height: 0.3vw
+                margin-top: 0.5vw
+                background: $colorPurple
+            p
+                position: relative
+                font-size: 1.2vw
+                margin-top: 1vw
+                color: $blackText
+                text-align: center
+    #Section5
+        width: 100%
+        min-height: 100vh
+        padding-bottom: 5vw
+        .ContactCountainer
+            position: relative
+            width: 80%
+            margin-left: 10%
+            margin-top: 3vw
+            display: table
+            .item
+                position: relative
+                width: 45%
+                margin: 0 2.5%
+                float: left
+            .Left
+                height: 30vw
+            .Right
+                margin-top: 6vw
+                height: 20vw
+                form
+                    .half
+                        position: relative
+                        width: 45%
+                        margin: 1vw 1.5%
+                        border: none
+                        height: 2vw
+                        line-height: 2vw
+                        font-size: 1vw
+                        padding: 1%
+                        outline: 1px solid $blackText
+                        color: $blackText
+                    .complete
+                        position: relative
+                        width: 95%
+                        margin: 1vw 1.5%
+                        border: none
+                        height: 2vw
+                        line-height: 2vw
+                        font-size: 1vw
+                        padding: 1%
+                        outline: 1px solid $blackText
+                        color: $blackText
+                    textarea
+                        position: relative
+                        width: 95%
+                        margin: 1vw 1.5%
+                        border: none
+                        height: 6vw
+                        line-height: 2vw
+                        font-size: 1vw
+                        padding: 1%
+                        outline: 1px solid $blackText
+                        color: $blackText
+                        resize: none
+        .iconsBlock
+            position: relative
+            width: 70%
+            margin-left: 15%
+            height: 10vw
+            margin-top: 3vw
+            .item
+                position: relative
+                float: left
+                width: 33.33%
+                height: 100%
+                .IconCountainter
+                    position: relative
+                    width: 2vw
+                    height: 2vw
+                    margin: 0 auto
+                    background: magenta
+                .Title
+                    position: relative
+                    width: 100%
+                    text-align: center
+                    font-size: 2vw
+                    color: $colorPurple
+                    margin-top: 1vw
+                .Subtitle
+                    position: relative
+                    width: 100%
+                    text-align: center
+                    font-size: 1vw
+                    color: $blackText
+                    margin-top: 0.5vw
+        .TextBlock
+            position: relative
+            width: 70%
+            margin-left: 15%
+            h2
+                font-size: 3vw
+                text-align: center
+                color: $blackText
+            .line
+                position: relative
+                width: 4vw
+                margin: 0 auto
+                height: 0.3vw
+                margin-top: 0.5vw
+                background: $colorPurple
+            p
+                position: relative
+                font-size: 1.2vw
+                margin-top: 1vw
+                color: $blackText
+                text-align: center
+    footer
+        position: relative
+        width: 100%
+        height: 15vw
+        background: silver
+        padding: 4vw 0vw
+        .Line
+            position: relative
+            width: 90%
+            height: 0.3vw
+            background: $colorPurple
+            margin-left: 5%
+
+        .FooterCountainer
+            position: relative
+            display: table
+            width: 80%
+            margin-left: 10%
+            margin-bottom: 3vw
+            .Copy
+                font-size: 1vw
+                margin: 1vw 0
+            .FooterBlock1
+                position: relative
+                width: 40%
+                float: left
+                .addressText
+                    position: relative
+                    width: 40%
+                    margin-top: 2vw
+                    font-size: 1vw
+
+                .LogoCountainer
+                    position: relative
+                    width: 30%
+                    height: 2vw
+            .FooterBlock2
+                position: relative
+                width: 20%
+                float: left
+                margin-top: 1vw
+                .Title
+                    position: relative
+                    font-size: 1.4vw
+                    margin-bottom: 2vw
+                ul
+                    li
+                        list-style: inside
+                        font-size: 1vw
+                        line-height: 1.3vw
